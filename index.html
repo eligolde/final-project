@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Future Olympic Sports</title>
+
+	<link rel="stylesheet" href="styles/main.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
+
+	</head>
+
+
+	<body>
+
+<header>
+	<h1>The Next Olympic Events</h1>
+</header>
+
+
+<div id="intro">
+	<p>The Olympic Games are a pleasant time when we can all get together and root for our country in sports that we may or may not even know the rules for. So, why not add to the fun by adding even more of them? Olympic organizers have invited nine sports to make their case for inclusion at the 2028 Games in Los Angeles, which you can learn more about below.</p>
+</div>
+
+
+	<article class="story">
+
+
+<div id = "bb_hide">
+	<div id = "bball_title">
+		<p>Baseball/Softball</p>
+	</div>
+	<div id ="bb_headline" class="headline">
+		<h2>Baseball/Softball</h2>
+	</div>
+		<div id="bball_photo">
+			<img src="media/bb_circle2.png" alt="baseball">
+		</div>
+		<div id="baseball">
+			<div id="bb_map"></div>
+			<button id="bb_button" class="mapButton" type="button" name="baseball_map">See where in the world it's played!</button>
+			<a href="https://youtu.be/UuH14ojY7Z8?t=18"><button>See it in action!</button></a>
+			<p> Baseball is a classic American sport, but it hasn't caught on as an Olympic mainstay. It debuted at the Olympics in St. Louis in 1904, though only as an exhibition. It remained a demonstration sport with a constantly changing format until 1992, when it became an official part of the Olympic program. Baseball and softball remained through 2008, but after years of Major League Baseball denying its players from competing, it was dropped from the 2012 and 2016 Games. It came back in 2020 but will not be in the 2024 Paris Games. Due to its popularity in the U.S., it's expected to be included in the 2028 program. </p>
+	</div>
+</div>
+
+<div id = "c_hide">
+	<div id = "cricket_title">
+		<p>Cricket</p>
+	</div>
+	<div id ="c_headline" class="headline">
+		<h2>Cricket</h2>
+	</div>
+		<div id="cricket_photo">
+			<img src="media/c_circle.png" alt="cricket">
+		</div>
+		<div id="cricket">
+			<div id="c_map"></div>
+			<button id="c_button" class="mapButton" type="button" name="cricket_map">See where in the world it's played!</button>
+			<a href="https://www.youtube.com/watch?v=HZOUJ_I7BwU"><button>See it in action!</button></a>
+			<p> If cricket were included in the 2028 Games, it would technically not be a first. In 1900, Great Britain and France competed for the cricket gold medal, but they were the only two. Since then, cricket has been absent from the Olympics, but its supporters have made a push to include it in 2028. It's highly popular in and around India. The sport itself is similar to baseball, but the ball is bowled to the batter. It includes several other key rules that would be too long to list here, so click the link above to learn more.</p>
+	</div>
+	</div>
+
+<div id = "s_hide">
+	<div id = "squash_title">
+		<p>Squash</p>
+	</div>
+	<div id ="s_headline" class="headline">
+		<h2>Squash</h2>
+	</div>
+		<div id="squash_photo">
+			<img src="media/s_circle.png" alt="squash">
+		</div>
+		<div id="squash">
+		<div id="s_map"></div>
+		<button id="s_button" class="mapButton">See where in the world it's played!</button>
+		<a href="https://www.youtube.com/watch?v=rV7W7GYn4no"><button>See it in action!</button></a>
+		<p> Every attempt the World Squash Federation has made to get into the Olympics has been... well, squashed. However, it's once again on the docket to make its Olympic push. If you get past the funky name, squash can be an entertaining watch. It's like if tennis players played on a court with one side folded up to a wall, with the competitors smashing the ball against that wall until the other hits it out of bounds or fails to hit it.</p>
+	</div>
+</div>
+
+<div id = "m_hide">
+	<div id = "motorsport_title">
+		<p>Motorsport</p>
+	</div>
+	<div id ="m_headline" class="headline">
+		<h2>Motorsport</h2>
+	</div>
+		<div id="motorsport_photo">
+			<img src="media/m_circle.png" alt="motorsport">
+		</div>
+		<div id="motorsport">
+			<div id="m_map"></div>
+		<button class="mapButton" id="m_button">See where in the world it's played!</button>
+		<a href="https://youtu.be/iAoiP68vKtA?t=142"><button>See it in action!</button></a>
+		<p>Racecar driving in the Olympics? It wouldn't be the first time. Way back in 1900, motorsport made its only appearance in the Games. The cars may have changed since then, but the draw is still the same: vehicles racing against each other at ridiculous speeds. Motorsport includes a variety of disciplines, but the one expected to make it to the Olympics is karting.</p>
+	</div>
+	</div>
+
+<div id = "l_hide">
+	<div id = "lacrosse_title">
+		<p>Lacrosse</p>
+	</div>
+	<div id ="l_headline" class="headline">
+		<h2>Lacrosse</h2>
+	</div>
+		<div id="lax_photo">
+			<img src="media/l_circle.png" alt="lacrosse">
+		</div>
+		<div id="lacrosse">
+			<div id="l_map"></div>
+		<button class="mapButton" id="l_button">See where in the world it's played!</button>
+		<a href="https://youtu.be/acuB9Nos8eg?t=97"><button>See it in action!</button></a>
+		<p>Lacrosse is a physical game where two teams of ten players suit up in pads and helmets and attempt to outscore the other. They use a long stick with a net at the end to corral the ball and shoot it into the net (and occasionally to whack another player). It was included in the 1904 and 1908 Olympic Games, but has been absent except as an occasional demonstration event. With the sort's massive popularity in the U.S., 2028 would make for a good time for lacrosse to make its comeback.</p>
+	</div>
+	</div>
+
+<div id = "kb_hide">
+	<div id = "kickboxing_title">
+		<p>Kickboxing</p>
+	</div>
+	<div id ="kb_headline" class="headline">
+		<h2>Kickboxing</h2>
+	</div>
+		<div id="kickboxing_photo">
+			<img src="media/kb_circle.png" alt="kickboxing">
+		</div>
+		<div id="kickboxing">
+			<div id="kb_map"></div>
+		<button class="mapButton" id="kb_button">See where in the world it's played!</button>
+		<a href="https://youtu.be/hRBsIxXrWxo?t=126"><button>See it in action!</button></a>
+		<p>This combat sport has never been a part of the Olympic Games. The violent and bloody nature of it has made the Olympic Committee wary to include it for an international audience, but with the meteoric rise in popularity of mixed martial arts, especially in the U.S., it's possible kickboxing makes it in. For the uninitiated, kickboxing is exactly what it sounds like: traditional hand-to-hand boxing with a variety of kicks for fighters to use at their disposal.</p>
+	</div>
+	</div>
+
+<div id = "b_hide">
+	<div id = "breaking_title">
+		<p>Breaking</p>
+	</div>
+	<div id ="b_headline" class="headline">
+		<h2>Breaking</h2>
+	</div>
+		<div id="breaking_photo">
+			<img src="media/b_circle.png" alt="breaking">
+		</div>
+		<div id="breaking">
+			<div id="b_map"></div>
+		<button class="mapButton" id="b_button">See where in the world it's played!</button>
+		<a href="https://youtu.be/PznYLQ1wf1Q"><button>See it in action!</button></a>
+		<p>Breaking, or breakdancing, is the only one of these sports that has been confirmed for the 2024 Games in Paris, France. Of all these, breakdancing may seem like the most... unlike a sport. Most people have seen street breakdancers spinning like a top on their head and hands to the amazement of crowds, but in the Olympics, these performers will be battling head-to-head. The competitors will be scored on their creativity, personality, technique, variety, performativity and musciality.</p>
+	</div>
+	</div>
+
+
+<div id = "ff_hide">
+	<div id = "flag_title">
+		<p>Flag Football</p>
+	</div>
+	<div id ="ff_headline" class="headline">
+		<h2>Flag Football</h2>
+	</div>
+		<div id="flag_photo">
+			<img src="media/ff_circle.png" alt="flag football">
+		</div>
+		<div id="flag">
+			<div id="ff_map"></div>
+		<button class="mapButton" id="ff_button">See where in the world it's played!</button>
+		<a href="https://youtu.be/BTyY5hr7qb0?t=291"><button>See it in action!</button></a>
+		<p>This Olympic bid is being pushed by the National Football League. It's an attempt to grow the sport to an international audience, at least according to the league. If flag football were to be added any year, it would be 2028, as the city of Los Angeles alone has two professional football teams.</p>
+	</div>
+	</div>
+
+<div id = "k_hide">
+	<div id = "karate_title">
+		<p>Karate</p>
+	</div>
+	<div id ="k_headline" class="headline">
+		<h2>Karate</h2>
+	</div>
+		<div id="karate_photo">
+			<img src="media/k_circle.png" alt="karate">
+		</div>
+		<div id="karate">
+			<div id="k_map"></div>
+		<button class="mapButton" id="k_button">See where in the world it's played!</button>
+		<a href="https://youtu.be/a9OrsfsE0cI?t=621"><button>See it in action!</button></a>
+		<p>Karate actually made its Olympic debut with both men's and women's divisions in the 2020 Games in Tokyo, but after some backlash, it was removed from the 2024 program. It might be a tough sell to the committee given it's a combat sport, but that remains to be seen. Karate is a classic form of martial arts, with two categories put in Olympic competition. Kumite is semi-contact and judged on points, while kata is full contact and graded on power.</p>
+	</div>
+	</div>
+
+</article>
+
+<footer>
+<h2>Sources</h2>
+<ol>
+	<p>Photo of Los Angeles skyline by Adoramassey, <a href="https://commons.wikimedia.org/wiki/File:Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
+
+	<p>Photo of baseball pitcher by Keith Allison on Flickr, <a href="https://commons.wikimedia.org/wiki/File:Zack_Greinke_on_July_29,_2009.jpg">CC BY-SA 2.0</a>, via Wikimedia Commons </p>
+
+	<p>Photo of cricket player by Acabashi, <a href="https://commons.wikimedia.org/wiki/File:Southgate_CC_v_Stanmore_CC_at_Walker_Cricket_Ground,_Southgate,_London_23.jpg">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
+
+	<p>Photo of squash player by User5757, <a href="https://commons.wikimedia.org/wiki/File:Semifinal_Squash_2021.jpg">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
+
+	<p>Photo of racecar by user:AngMoKio, <a href="https://commons.wikimedia.org/wiki/File:DTM_car_mercedes2006_Haekkinen_racing.jpg">CC BY-SA 2.5</a>, via Wikimedia Commons</p>
+
+	<p>Photo of lacrosse player by EDrost88, <a href="https://commons.wikimedia.org/wiki/File:Allegheny_vs._Baldwin_Wallace_Lacrosse_-_49599464711.jpg">CC BY 2.0</a>, via Wikimedia Commons</p>
+
+	<p>Photo of kickboxing fighters by Astro medya  Org. Ltd. ŞTİ.,<a href="https://commons.wikimedia.org/wiki/File:5._Islamic_Solidarity_Games_2021_Konya_Women_Kickboxing_20220817_1.jpg">CC BY 2.0</a>, via Wikimedia Commons</p>
+
+	<p>Photo of breakdancer by Flickr Creative Commons, <a href="https://commons.wikimedia.org/wiki/File:B_Boy_doing_a_freeze.jpg">CC BY-SA 2.0</a>, via Wikimedia Commons</p>
+
+	<p>Photo of flag football player by U.S. Navy photo by Gary Nichols, <a href="https://commons.wikimedia.org/wiki/File:US_Navy_110802-N-GS507-523_Chief_Information_Systems_Technician_Otis_Frazier,_center,_runs_for_a_first_down_during_the_annual_flag_football_game_be.jpg">Public domain</a>, via Wikimedia Commons</p>
+
+	<p>Photo of karate fighters by SportsMedia1, <a href="https://commons.wikimedia.org/wiki/File:Fatima-Zahrae-Nouasse-Nouass-Fatima-Zahra-World-Championship-Karate-Paris-France-Maroc-Karat%C3%A9ka_01.jpg">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
+</ol>
+
+</footer>
+
+<script src="scripts/main.js"></script>
+
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+<script>
+let map = L.map('bb_map').setView([36.450152, -92.785427], 2.00);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/egolde/clbjnulew000415qejybte64m/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZWdvbGRlIiwiYSI6ImNsYWxheTVlczAzbXkzb28ycHpydWpzc2gifQ.ScmqZQFSGUL-lSO4_JA0Ag', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
+}).addTo(map);
+
+let bb_marker1 = L.marker([34.052235, -118.243683]).addTo(map);
+bb_marker1.bindPopup("<p>Los Angeles, United States</p>");
+let bb_marker2 = L.marker([19.468939041682937, -70.70944544076612]).addTo(map);
+bb_marker2.bindPopup("<p>Cibao Stadium, Dominican Republic</p>");
+let bb_marker3 = L.marker([20.191817773136634, -75.19728879338852]).addTo(map);
+bb_marker3.bindPopup("<p>Nguyen Van Troi Stadium, Cuba</p>");
+let bb_marker4 = L.marker([10.595336217862954, -68.02528393104173]).addTo(map);
+bb_marker4.bindPopup("<p>Venezuelan Baseball Hall of Fame and Museum, Venezuela</p>");
+let bb_marker5 = L.marker([25.718334402201044, -100.31542183098121]).addTo(map);
+bb_marker5.bindPopup("<p>Monterrey Baseball Stadium, Mexico</p>");
+let bb_marker6 = L.marker([43.64191955406556, -79.38915979325276]).addTo(map);
+bb_marker6.bindPopup("<p>Rogers Centre, Canada</p>");
+
+let map2 = L.map('c_map').setView([23.106236795401106, 72.59853580157235], 3.00);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/egolde/clbjnulew000415qejybte64m/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZWdvbGRlIiwiYSI6ImNsYWxheTVlczAzbXkzb28ycHpydWpzc2gifQ.ScmqZQFSGUL-lSO4_JA0Ag', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
+}).addTo(map2);
+
+ let c_marker1 = L.marker([23.106236795401106, 72.59853580157235]).addTo(map2);
+ c_marker1.bindPopup("<p>Narendra Modi Stadium, India</p>");
+ let c_marker2 = L.marker([25.12726822238889, 67.35981296900911]).addTo(map2);
+ c_marker2.bindPopup("<p>Rafi Cricket Stadium, Pakistan</p>");
+ let c_marker3 = L.marker([6.908387268603109, 79.86520771299409]).addTo(map2);
+ c_marker3.bindPopup("<p>Colombo Cricket Club Ground, Sri Lanka</p>");
+ let c_marker4 = L.marker([23.807183918741654, 90.36360056898823]).addTo(map2);
+c_marker4.bindPopup("<p>Sher-E-Bangla National Cricket Stadium, Bangladesh</p>");
+ let c_marker5 = L.marker([-33.96634850868644, 25.610299242186198]).addTo(map2);
+ c_marker5.bindPopup("<p>Saint George's Park, South Africa</p>");
+let c_marker6 = L.marker([51.52994444563961, -0.17218858804242465]).addTo(map2);
+ c_marker6.bindPopup("<p>Lord's Cricket Ground, England</p>");
+
+let map3 = L.map('s_map').setView([32.563306, 23.372304], 3.00);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/egolde/clbjnulew000415qejybte64m/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZWdvbGRlIiwiYSI6ImNsYWxheTVlczAzbXkzb28ycHpydWpzc2gifQ.ScmqZQFSGUL-lSO4_JA0Ag', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
+}).addTo(map3);
+
+let s_marker1 = L.marker([30.539790664340362, 31.75666774482209]).addTo(map3);
+s_marker1.bindPopup("<p>Rowad Club Squash Court, Egypt</p>");
+let s_marker2 = L.marker([50.20369509199086, 2.0294389733098948]).addTo(map3);
+s_marker2.bindPopup("<p>Squash Montmartre, France</p>");
+let s_marker3 = L.marker([-33.89415093441782, 175.47019359583487]).addTo(map3);
+s_marker3.bindPopup("<p>Panmure Squash Club, New Zealand</p>");
+let s_marker4 = L.marker([53.79705622709672, 0.3466983874585687]).addTo(map3);
+s_marker4.bindPopup("<p>London Open Squash, England</p>");
+let s_marker5 = L.marker([-24.12778818190865, 153.62158793370423]).addTo(map3);
+s_marker5.bindPopup("<p>Australian National Squash Centre, Australia</p>");
+let s_marker6 = L.marker([24.90666627697654, 67.03944828632235]).addTo(map3);
+s_marker6.bindPopup("<p>Pakistan Navy Roshan Khan Jahangir Khan Squash Complex, Pakistan</p>");
+
+let map4 = L.map('m_map').setView([46.015254, 7.960912], 3.00);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/egolde/clbjnulew000415qejybte64m/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZWdvbGRlIiwiYSI6ImNsYWxheTVlczAzbXkzb28ycHpydWpzc2gifQ.ScmqZQFSGUL-lSO4_JA0Ag', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
+}).addTo(map4);
+
+let m_marker1 = L.marker([40.88804581179573, -122.46903724992266]).addTo(map4);
+m_marker1.bindPopup("<p>Thunderhill Raceway Park, United States</p>");
+let m_marker2 = L.marker([40.17589922401093, 18.032898515502325]).addTo(map4);
+m_marker2.bindPopup("<p>Nardò Ring, Italy</p>");
+let m_marker3 = L.marker([41.630496644318576, 2.294530573046661]).addTo(map4);
+m_marker3.bindPopup("<p>Centro Modelismo Les Franqueses del Valles, Spain</p>");
+let m_marker4 = L.marker([50.33683734952498, 6.942061679830684]).addTo(map4);
+m_marker4.bindPopup("<p>Nürburgring, Germany</p>");
+let m_marker5 = L.marker([34.84576960180747, 136.53906485276937]).addTo(map4);
+m_marker5.bindPopup("<p>Suzuka Circuit, Japan</p>");
+
+let map5 = L.map('l_map').setView([44.130005, -97.876227], 3.00);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/egolde/clbjnulew000415qejybte64m/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZWdvbGRlIiwiYSI6ImNsYWxheTVlczAzbXkzb28ycHpydWpzc2gifQ.ScmqZQFSGUL-lSO4_JA0Ag', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
+}).addTo(map5);
+
+let l_marker1 = L.marker([41.04320037066563, -76.11796761654008]).addTo(map5);
+l_marker1.bindPopup("<p>USA Lacrosse Headquarters, United States</p>");
+let l_marker2 = L.marker([50.672166210517695, -122.95531307328689]).addTo(map5);
+l_marker2.bindPopup("<p>Canadian Lacrosse Hall of Fame, Canada</p>");
+let l_marker3 = L.marker([53.484514541319434, -2.2021565591481087]).addTo(map5);
+l_marker3.bindPopup("<p>England Lacrosse, England</p>");
+let l_marker4 = L.marker([-37.8381401648929, 144.85905926419343]).addTo(map5);
+l_marker4.bindPopup("<p>Altona Lacrosse Club, Australia</p>");
+let l_marker5 = L.marker([35.048272647068046, 34.685669113372406]).addTo(map5);
+l_marker5.bindPopup("<p>Israel Lacrosse National Training Center, Israel</p>");
+
+let map6 = L.map('kb_map').setView([35.891747, 125.986143], 3.06);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/egolde/clbjnulew000415qejybte64m/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZWdvbGRlIiwiYSI6ImNsYWxheTVlczAzbXkzb28ycHpydWpzc2gifQ.ScmqZQFSGUL-lSO4_JA0Ag', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
+}).addTo(map6);
+
+let kb_marker1 = L.marker([52.988093061475645, 4.7560095853457875]).addTo(map6);
+kb_marker1.bindPopup("<p>Combat Sports Academy Holland, Netherlands</p>");
+let kb_marker2 = L.marker([36.787291449715575, 139.93524670572972]).addTo(map6);
+kb_marker2.bindPopup("<p>Kick Boxing Gym ZERO, Japan</p>");
+let kb_marker3 = L.marker([57.36132509017045, 37.529310353426226]).addTo(map6);
+kb_marker3.bindPopup("<p>F-Lab Studio Sport Martial Arts and CrossFit, Russia</p>");
+let kb_marker4 = L.marker([16.142141060147896, 101.50671269583485]).addTo(map6);
+kb_marker4.bindPopup("<p>EVO360 Muay Thai, Thailand</p>");
+let kb_marker5 = L.marker([53.48435843802516, -6.324298546081934]).addTo(map6);
+kb_marker5.bindPopup("<p>SBG Ireland HQ - Dublin BJJ & MMA, Ireland</p>");
+
+let map7 = L.map('b_map').setView([40.813274, 133.116916], 3.00);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/egolde/clbjnulew000415qejybte64m/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZWdvbGRlIiwiYSI6ImNsYWxheTVlczAzbXkzb28ycHpydWpzc2gifQ.ScmqZQFSGUL-lSO4_JA0Ag', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
+}).addTo(map7);
+
+let b_marker1 = L.marker([37.55133646346, 127.04584074968919]).addTo(map7);
+b_marker1.bindPopup("<p>Seoul, South Korea</p>");
+let b_marker2 = L.marker([43.49182495699868, -73.37341453401633]).addTo(map7);
+b_marker2.bindPopup("<p>Dynasty Breaking NYC, United States</p>");
+let b_marker3 = L.marker([35.74775626861507, 139.69050644541957]).addTo(map7);
+b_marker3.bindPopup("<p>EXILE PROFESSIONAL GYM Tokyo School, Japan</p>");
+let b_marker4 = L.marker([52.709630407889485, 30.255533717824065]).addTo(map7);
+b_marker4.bindPopup("<p>D.Side Dance Studio, Ukraine</p>");
+let b_marker5 = L.marker([52.41359737991481, 4.872761188933046]).addTo(map7);
+b_marker5.bindPopup("<p>Wladimir Dance Studios, Netherlands</p>");
+
+let map8 = L.map('ff_map').setView([32.234934, -99.771041], 3.00);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/egolde/clbjnulew000415qejybte64m/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZWdvbGRlIiwiYSI6ImNsYWxheTVlczAzbXkzb28ycHpydWpzc2gifQ.ScmqZQFSGUL-lSO4_JA0Ag', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
+}).addTo(map8);
+
+let ff_marker1 = L.marker([45.75830854281163, -83.90238585338022]).addTo(map8);
+ff_marker1.bindPopup("<p>National Flag Football - HQ, United States</p>");
+let ff_marker2 = L.marker([-22.832669414114452, -43.299912407460866]).addTo(map8);
+ff_marker2.bindPopup("<p>Rio de Janeiro, Brazil</p>");
+let ff_marker3 = L.marker([19.749303470146092, -99.00403386780486]).addTo(map8);
+ff_marker3.bindPopup("<p>Liga Football Flag Estado De México, Mexico</p>");
+let ff_marker4 = L.marker([9.554226075544163, -79.5516493559372]).addTo(map8);
+ff_marker4.bindPopup("<p>Sport Center Costa del Este, Panama</p>");
+let ff_marker5 = L.marker([48.17342078555911, 16.42555154069491]).addTo(map8);
+ff_marker5.bindPopup("<p>Football Federation Austria, Austria</p>");
+
+let map9 = L.map('k_map').setView([47.348198, 19.084552], 2.76);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/egolde/clbjnulew000415qejybte64m/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZWdvbGRlIiwiYSI6ImNsYWxheTVlczAzbXkzb28ycHpydWpzc2gifQ.ScmqZQFSGUL-lSO4_JA0Ag', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
+}).addTo(map9);
+
+let k_marker1 = L.marker([38.411999435552026, 50.70842836311459]).addTo(map9);
+k_marker1.bindPopup("<p>Iran Karate Federation, Iran</p>");
+let k_marker2 = L.marker([36.66796139376589, 139.60353284555543]).addTo(map9);
+k_marker2.bindPopup("<p>Japan Karate Shoto Federation Headquarters Dojo, Japan</p>");
+let k_marker3 = L.marker([40.45426515852731, 32.78463032722801]).addTo(map9);
+k_marker3.bindPopup("<p>Cankaya Martial Arts Sports Club, Turkey</p>");
+let k_marker4 = L.marker([41.8274206252101, 2.143363472777741]).addTo(map9);
+k_marker4.bindPopup("<p>Barcelona Martial Arts Academy, Spain</p>");
+let k_marker5 = L.marker([49.20609129044775, 2.3562237905788184]).addTo(map9);
+k_marker5.bindPopup("<p>France Shotokan Paris, France</p>");
+
+</script>
+
+	</body>
+	</html>
