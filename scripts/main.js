@@ -1,4 +1,6 @@
-//onmouseover events
+//onmouseover events code from:
+//https://www.tutorialspoint.com/how-to-remove-event-handlers-in-javascript#
+//https://sabe.io/blog/javascript-remove-event-listeners
 
 //baseball
 let bb_photo = document.querySelector('#bball_photo');
@@ -153,7 +155,10 @@ function KMouseLeaveEffect() {
 	k_div.style.display = 'none';
 };
 
-//onclick Events
+//onclick Events code from:
+//https://stackoverflow.com/questions/56386706/modify-grid-template-columns-using-javascript
+//https://jsfiddle.net/macloo/h0zs5uyL/
+
 
 //baseball
 
@@ -226,6 +231,9 @@ function bb_showAndHide() {
 
 let bbMap = document.querySelector('#bb_map');
 let bbButton = document.querySelector('#bb_button');
+
+//map onlick events code from:
+//https://sebhastian.com/javascript-show-hide-div-onclick-toggle/
 
 bbButton.onclick = function () {
   if (bbMap.style.display !== "none") {

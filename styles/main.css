@@ -48,7 +48,6 @@ header {
 header h1 {
 	padding: 5rem 0rem;
 	font-size: 3rem;
-	text-shadow: 1;
 	margin-top: 0;
 }
 
@@ -80,6 +79,7 @@ header h1 {
 #baseball, #cricket, #squash, #motorsport, #lacrosse, #kickboxing, #breaking, #flag, #karate{
 	font-size: 1.5rem;
 	display: none;
+	max-width: 40rem;
 }
 
 button {
@@ -117,8 +117,5 @@ footer a:hover {
 	article {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr;
-};
-
-button {
-	gap: 10px;
-};
+	}
+}
